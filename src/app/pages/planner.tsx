@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import React, { useState } from 'react';
 import { Logo } from '../components/logo';
 import { BetterButton } from '../components/better-button';
@@ -22,7 +23,7 @@ export default function PlannerPage() {
   const [wakeUpTime] = useState('06:00');
   const [trainingTime] = useState('17:00');
   const [sleepTarget] = useState('22:30');
-  
+
   const [hydrationCurrent, setHydrationCurrent] = useState(1.5);
   const [hydrationTarget] = useState(4);
 
@@ -97,13 +98,13 @@ export default function PlannerPage() {
           <div className="flex items-center justify-between">
             <Logo />
             <div className="flex items-center gap-3">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to Home
-              </a>
+              </Link>
               <BetterButton variant="primary" size="sm">
                 Save Plan
               </BetterButton>

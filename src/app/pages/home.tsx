@@ -56,18 +56,18 @@ export default function HomePage() {
               Science-backed training, nutrition timing, and supplement strategies.
             </p>
             <div className="flex items-center justify-center gap-4 flex-wrap">
-              <a href="/planner">
+              <Link to="/planner">
                 <BetterButton variant="primary" size="lg">
                   <Calendar className="w-5 h-5" />
                   Open Daily Planner
                 </BetterButton>
-              </a>
-              <a href="/nutrition">
+              </Link>
+              <Link to="/nutrition">
                 <BetterButton variant="outline" size="lg">
                   <Apple className="w-5 h-5" />
                   Explore Nutrition
                 </BetterButton>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {/* Training Techniques */}
-          <a href="/techniques">
+          <Link to="/techniques">
             <BetterCard className="group cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
               <BetterCardContent className="flex flex-col items-center text-center py-8">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
@@ -103,10 +103,10 @@ export default function HomePage() {
                 </button>
               </BetterCardContent>
             </BetterCard>
-          </a>
+          </Link>
 
           {/* Muscle-Building Foods */}
-          <a href="/nutrition">
+          <Link to="/nutrition">
             <BetterCard className="group cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
               <BetterCardContent className="flex flex-col items-center text-center py-8">
                 <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
@@ -124,10 +124,10 @@ export default function HomePage() {
                 </button>
               </BetterCardContent>
             </BetterCard>
-          </a>
+          </Link>
 
           {/* Vitamin & Supplement Timing */}
-          <a href="/supplements">
+          <Link to="/supplements">
             <BetterCard className="group cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
               <BetterCardContent className="flex flex-col items-center text-center py-8">
                 <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
@@ -145,10 +145,10 @@ export default function HomePage() {
                 </button>
               </BetterCardContent>
             </BetterCard>
-          </a>
+          </Link>
 
           {/* Meal Recipes */}
-          <a href="/meals">
+          <Link to="/meals">
             <BetterCard className="group cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
               <BetterCardContent className="flex flex-col items-center text-center py-8">
                 <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
@@ -166,10 +166,10 @@ export default function HomePage() {
                 </button>
               </BetterCardContent>
             </BetterCard>
-          </a>
+          </Link>
 
           {/* Protein Shake Recipes */}
-          <a href="/recipes">
+          <Link to="/recipes">
             <BetterCard className="group cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
               <BetterCardContent className="flex flex-col items-center text-center py-8">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
@@ -187,7 +187,7 @@ export default function HomePage() {
                 </button>
               </BetterCardContent>
             </BetterCard>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -287,12 +287,12 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <a href="/feature-demo">
+            <Link to="/feature-demo">
               <BetterButton variant="primary" size="lg">
                 <Sparkles className="w-5 h-5" />
                 Explore Features
               </BetterButton>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
